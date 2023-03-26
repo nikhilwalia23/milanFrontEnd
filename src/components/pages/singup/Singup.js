@@ -11,7 +11,7 @@ const Singup = () => {
         username: "",
         name: "",
         email: "",
-        number: "",
+        number: "8888888888",
         city: "",
         password: "",
         dob: "",
@@ -44,7 +44,7 @@ const Singup = () => {
            console.log(signupForm);
            var config = {
             method: 'post',
-            url: 'http://localhost:4000/backendapi/singup',
+            url: process.env.REACT_APP_BACKEND+'/backendapi/singup',
             headers: { 
               'Content-Type': 'application/json'
             },

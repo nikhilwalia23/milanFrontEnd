@@ -7,6 +7,7 @@ import { AiFillAudio } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { GrClose } from "react-icons/gr";
 import {BiTimeFive} from "react-icons/bi"
+import {MdOutlineDone} from 'react-icons/md'
 
 
 import "./Chatwindow.css";
@@ -111,10 +112,10 @@ let Chatwindow = () => {
         </div>
         <div className="chat_text_contain">
           <div className="chat_individual_message_text">
-            <p>{msg.data}</p>
-            <p> <BiTimeFive/> {ampmtime(date)} </p>
+            <p className="pdt4">{msg.data}</p>
+            <p> <BiTimeFive/> {ampmtime(date)}  <span className="chatwindow_right"><MdOutlineDone/></span></p>
           </div>
-          <div className="chat_individual_message_cut"></div>
+          {/* <div className="chat_individual_message_cut"></div> */}
         </div>
       </div>
     );
